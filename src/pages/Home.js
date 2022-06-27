@@ -27,11 +27,15 @@ export default function Home() {
 
     return (
         <div className="imageBackground">
-            <DropBox onDrop={onDrop} />
-            <ShowImage image={image} name={imageName} temp={temp} setLink={setLink} />
-            { link  && 
-                <button type="button" class="btn btn-success" onClick={() => {window.open(link, "_blank")}}>Go To Link</button>
-            }
+            <div className="dropContainer">
+                <DropBox onDrop={onDrop} />
+                <ShowImage image={image} name={imageName} temp={temp} setLink={setLink} />
+                { link  && 
+                    <div style={{textAlign: 'center', marginTop: 50}}>
+                        <button type="button" className="btn" onClick={() => {window.open(link, "_blank")}}>Go To Link</button>
+                    </div>
+                }
+            </div>
         </div>
     )
 }

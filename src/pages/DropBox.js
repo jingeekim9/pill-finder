@@ -16,6 +16,7 @@ const getColor = (props) => {
 };
 
 const Container = styled.div`
+	width: 100%;
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -50,9 +51,9 @@ function DropBox({ onDrop }) {
 	});
 
 	const lists = acceptedFiles.map((list) => (
-		<li key={list.path}>
+		<div key={list.path}>
 			{list.path} - {list.size} bytes
-		</li>
+		</div>
 	));
 
 	return (
@@ -70,9 +71,9 @@ function DropBox({ onDrop }) {
 					</button>
 				</Container>
 			</section>
-			<aside style={{padding: 20}}>
-				<h4>{acceptedFiles.length > 0 && 'Image'}</h4>
-				<p>{lists}</p>
+			<aside style={{padding: 20, textAlign: 'center'}}>
+				<div style={{fontSize: 25, fontWeight: 'bold'}}>{acceptedFiles.length > 0 && 'Image'}</div>
+				<div>{lists}</div>
 			</aside>
 		</>
 	);

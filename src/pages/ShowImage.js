@@ -17,7 +17,7 @@ const ShowImage = ({ image, name, temp, setLink }) => {
             setLoading(true);
             const response = await axios({
             method: "post",
-            url: "http://127.0.0.1:8000/pill_identifier",
+            url: "https://pillfinder.herokuapp.com/pill_identifier",
             data: formData,
             headers: { 
                 "Content-Type": "multipart/form-data", 
@@ -32,15 +32,15 @@ const ShowImage = ({ image, name, temp, setLink }) => {
         }
     }
 
-	return <div className="container">
+	return <div className="container" style={{textAlign: 'center'}}>
             {image && show(image)}
             {
                 image && 
                 <div style={{display: 'inline-block'}}>
-                    <button type="button" className="btn btn-primary" style={{marginLeft: 30}} onClick={() => {handleSubmit()}}>
+                    <button type="button" className="btn" style={{marginLeft: 30}} onClick={() => {handleSubmit()}}>
                         {
                             loading ?
-                                <div class="spinner-border text-light" role="status"></div>
+                                <div className="spinner-border text-light" role="status"></div>
                                 :
                                 'Submit'
                         }
