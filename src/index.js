@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Navigation from './pages/Navigation';
 import About from './pages/About';
-
+import Footer from "./pages/Footer"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
@@ -19,6 +19,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
     </Routes>
+    <Footer />
   </Router>
 );
 

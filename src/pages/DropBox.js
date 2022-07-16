@@ -21,7 +21,7 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 40px;
+	// padding: 40px;
 	border-width: 2px;
 	border-radius: 10px;
 	border-color: ${(props) => getColor(props)};
@@ -57,25 +57,27 @@ function DropBox({ onDrop }) {
 	));
 
 	return (
-		<>
-			{' '}
+		<div style={{ marginTop: "5%" }}>
+
+			<p className='label-text'>Pill Image Search</p>
 			<section className="dropbox">
+
 				<Container
 					className="dropbox"
 					{...getRootProps({ isDragAccept, isFocused, isDragReject })}
 				>
 					<input {...getInputProps()} />
-					<p>Drag 'n' drop some files here</p>
+					<p>Drag & Drop</p>
 					<button type="button" className="btn" onClick={open}>
 						Click to select file
 					</button>
 				</Container>
 			</section>
-			<aside style={{padding: 20, textAlign: 'center'}}>
-				<div style={{fontSize: 25, fontWeight: 'bold'}}>{acceptedFiles.length > 0 && 'Image'}</div>
+			<aside style={{ padding: 20, textAlign: 'center' }}>
+				<div style={{ fontSize: 25, fontWeight: 'bold' }}>{acceptedFiles.length > 0 && 'Image'}</div>
 				<div>{lists}</div>
 			</aside>
-		</>
+		</div>
 	);
 }
 

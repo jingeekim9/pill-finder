@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Navigation() {
     return (
         <div className="navigation">
-            <nav className="navbar navbar-expand navbar-dark bg-dark">
+            <nav className="navbar navbar-expand navbar-dark" style={{ backgroundColor: "rgb(25, 118, 210)", }}>
                 <div className="container">
                     <NavLink className="navbar-brand" to="/">
                         Pill-Finder
