@@ -1,6 +1,7 @@
 import { useDropzone } from 'react-dropzone';
 
 import styled from 'styled-components';
+import { Divider, Box } from "@mui/material";
 
 const getColor = (props) => {
 	if (props.isDragAccept) {
@@ -59,6 +60,9 @@ function DropBox({ onDrop }) {
 	return (
 		<div style={{ marginTop: "5%" }}>
 
+			<Box mb={5}>
+				<Divider></Divider>
+			</Box>
 			<p className='label-text'>Pill Image Search</p>
 			<section className="dropbox">
 

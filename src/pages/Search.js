@@ -21,6 +21,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper'
+import { Divider } from "@mui/material";
 
 import React from "react";
 import { PILLS } from '../data/pills';
@@ -94,7 +95,7 @@ export default function Search() {
             </Box>
             <br /><br /><br />
             <Box display={"flex"} justifyContent="center">
-                <Button variant="outlined" onClick={() => { handleSearch() }} style={{ width: "50%" }}>Search</Button>
+                <Button variant="outlined" onClick={() => { handleSearch() }} style={{ width: "50%", backgroundColor: "#8759a8", borderColor: "#eee", color: "#fff" }}>Search</Button>
             </Box>
 
         </Box >
