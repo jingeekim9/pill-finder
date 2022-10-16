@@ -6,7 +6,7 @@ export default function Navigation() {
         <div className="navigation">
             <nav className="navbar navbar-expand navbar-dark" style={{ backgroundColor: "#f0edf2", }}>
                 <div className="container">
-                    <NavLink className="navbar-brand" to="/" style={{ height: 60 }}>
+                    <NavLink className="navbar-brand" to="/" style={{ height: 50 }}>
                         <p style={{ color: "#b0b0b0" }}><span style={{ color: "#02e0b4" }}>Pill</span>-<span style={{ color: "#8230b8" }}>Finder</span> <img
                             alt="img"
                             style={{ maxHeight: "50px" }}
@@ -16,13 +16,13 @@ export default function Navigation() {
                     <div>
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/" style={{ color: "#8230b8" }}>
-                                    Home
+                                <NavLink className="nav-link" to="/" style={{ color: "#8230b8", fontSize: 14 }}>
+                                    HOME
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/about" style={{ color: "#8230b8" }}>
-                                    About
+                                <NavLink className="nav-link" to="/about" style={{ color: "#8230b8", fontSize: 14 }}>
+                                    ABOUT
                                 </NavLink>
                             </li>
                         </ul>
