@@ -27,7 +27,7 @@ const Container = styled.div`
 	border-radius: 10px;
 	border-color: ${(props) => getColor(props)};
 	border-style: dashed;
-	background-color: #fafafa;
+	background-color: #f3f0f5;
 	color: black;
 	font-weight: bold;
 	font-size: 1.4rem;
@@ -71,7 +71,7 @@ function DropBox({ onDrop }) {
 					{...getRootProps({ isDragAccept, isFocused, isDragReject })}
 				>
 					<input {...getInputProps()} />
-					<p>Drag & Drop</p>
+					<p style={{ color: "#2cd4b3" }}>Drag & Drop</p>
 					<button type="button" className="btn" onClick={open}>
 						Click to select file
 					</button>

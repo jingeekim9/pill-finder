@@ -10,16 +10,16 @@ export default function About() {
                 <Box >
                     <Typography variant="overline" sx={{ fontSize: "20px" }}>Lauren Kim</Typography><br /><br />
 
-                    <Typography variant="overline">👉 XXth Year at XX School</Typography><br />
-                    <Typography variant="overline">👉 Loves to (hobby) </Typography><br />
-                    <Typography variant="overline">👉 Loves to (hobby2)</Typography><br />
+                    <Typography variant="overline">👉 Dulwich College Seoul</Typography><br />
+                    <Typography variant="overline">👉 Loves watching football 🏈 </Typography><br />
+                    <Typography variant="overline">👉 Loves listening to music 🎧</Typography><br />
 
                 </Box>
                 <Box mt={1}>
                     <img
                         alt="profile"
-                        style={{ width: 150, height: 150 }}
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj6OSkMVt7i1BRqfbWDG0qhrM0SMhF0cXOfg&usqp=CAU"></img>
+                        style={{ width: 125, height: 125, borderRadius: 10 }}
+                        src="./profile.png"></img>
                 </Box>
             </Box>
 
